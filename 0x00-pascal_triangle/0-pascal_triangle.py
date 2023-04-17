@@ -11,21 +11,21 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    #initialize the triangle
+    '''initialize the triangle'''
     tri = [[1]]
 
     for count in range(1, n):
-        #initialize the row
+        '''initialize the row'''
         row = [1]
 
         for count2 in range(1, count):
-            #value to be appended to row
+            '''value to be appended to row'''
             value = tri[count - 1][count2 - 1] + tri[count - 1][count2]
             row.append(value)
 
         row.append(1)
 
-        #append the row to the triangle
+        '''append the row to the triangle'''
         tri.append(row)
 
     return tri
