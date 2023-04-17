@@ -1,4 +1,8 @@
-# ALX Interview Preperation
+# ALX Interview Preparation
+
+- [0x00. Pascal's Triangle] (0x00-pascal_triangle)
+
+Create a function that returns a list of lists of integers representing the Pascal’s triangle.
 
 - [0x02. Minimum Operations](0x02-minimum_operations)
 
