@@ -20,6 +20,10 @@ The N queens puzzle is the challenge of placing N non-attacking queens on an N×
 
 Write a script that prints all characters of a Star Wars movie
 
--[0x08. Making Change](./0x08-making_change)
+- [0x07. Rotate 2D Matrix](./0x07-rotate_2d_matrix)
+
+Given an n x n 2D matrix, rotate it 90 degrees clockwise.
+
+- [0x08. Making Change](./0x08-making_change)
 
 Given a pile of coins of different values, determine the fewest number of coins needed to meet a given amount 'total'.
