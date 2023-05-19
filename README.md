@@ -12,6 +12,10 @@ In a text file, there is a single character H. Your text editor can execute only
 
 Write a method that determines if a given data set represents a valid UTF-8 encoding.
 
+- [0x05. N Queens](./0x05-nqueens)
+
+The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
+
 -[0x08. Making Change](./0x08-making_change)
 
 Given a pile of coins of different values, determine the fewest number of coins needed to meet a given amount 'total'.
