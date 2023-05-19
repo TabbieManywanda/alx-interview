@@ -16,6 +16,10 @@ Write a method that determines if a given data set represents a valid UTF-8 enco
 
 The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
 
+- [0x06. Star Wars API](./0x06-starwars_api)
+
+Write a script that prints all characters of a Star Wars movie
+
 -[0x08. Making Change](./0x08-making_change)
 
 Given a pile of coins of different values, determine the fewest number of coins needed to meet a given amount 'total'.
