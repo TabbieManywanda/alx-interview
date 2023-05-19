@@ -61,7 +61,7 @@ def isSafe(board, row, col):
 
 def solveNQUtil(board, col):
     '''self explanatory'''
-    
+
     if col == N:
         printSolution(board)
         return True
@@ -76,7 +76,7 @@ def solveNQUtil(board, col):
 
 def solveNQ():
     '''self explanatory'''
-    
+
     board = [[0 for j in range(N)] for i in range(N)]
     if solveNQUtil(board, 0) is False:
         pass
