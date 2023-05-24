@@ -12,6 +12,10 @@ You have n number of locked boxes in front of you. Each box is numbered sequenti
 
 In a text file, there is a single character H. Your text editor can execute only two operations in this file: Copy All and Paste. Given a number n, write a method that calculates the fewest number of operations needed to result in exactly n H characters in the file.
 
+- [0x03. Log Parsing](./0x03-log_parsing)
+
+Write a script that reads stdin line by line and computes metrics
+
 - [0x04. UTF-8 Validation](./0x04-utf8_validation)
 
 Write a method that determines if a given data set represents a valid UTF-8 encoding.
