@@ -35,3 +35,7 @@ Given an n x n 2D matrix, rotate it 90 degrees clockwise.
 - [0x08. Making Change](./0x08-making_change)
 
 Given a pile of coins of different values, determine the fewest number of coins needed to meet a given amount 'total'.
+
+- [0x09. Island Perimeter](./0x09-island_perimeter)
+
+Create a function def island_perimeter(grid): that returns the perimeter of the island described in grid
