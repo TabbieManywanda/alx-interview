@@ -39,3 +39,7 @@ Given a pile of coins of different values, determine the fewest number of coins 
 - [0x09. Island Perimeter](./0x09-island_perimeter)
 
 Create a function def island_perimeter(grid): that returns the perimeter of the island described in grid
+
+- [0x0A. Prime Game](./0x0A-primegame)
+
+Maria and Ben are playing a game. Given a set of consecutive integers starting from 1 up to and including n, they take turns choosing a prime number from the set and removing that number and its multiples from the set. The player that cannot make a move loses the game.
