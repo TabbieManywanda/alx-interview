@@ -3,28 +3,45 @@
 '''UTF-8 Validation'''
 
 
+def int_to_bits(nums):
+    """
+    Helper function
+    Convert ints to bits
+    """
+    for num in nums:
+        bits = []
+        mask = 1 << 8
+        while mask:
+            mask >>= 1
+            bits.append(bool(num & mask))
+        yield bits
+
+
 def validUTF8(data):
-    '''method that determines if a given data
-    set represents a valid UTF-8 encoding
-    Return: True if data is a valid UTF-8 encoding,
-    else return False'''
+    """
+    Takes a list of ints and returns true if the list is
+    a valid UTF-8 encoding, else returns false
+    Args:
+        data : List of ints representing possible UTF-8 encoding
+    Return:
+        bool : True or False
+    """
+    bits = int_to_bits(data)
+    for byte in bits:
+        if byte[0] == 0:
+            continue
 
-    leading_bytes = 0
+        ones = sum(takewhile(bool, byte))
+        if ones <= 1:
+            return False
+        if ones >= 4:
+            return False
 
-    for byte in data:
-        if leading_bytes == 0:
-            if byte >> 7 == 0b0:
-                continue
-            elif byte >> 5 == 0b110:
-                leading_bytes = 1
-            elif byte >> 4 == 0b1110:
-                leading_bytes = 2
-            elif byte >> 3 == 0b11110:
-                leading_bytes = 3
-            else:
+        for _ in range(ones - 1):
+            try:
+                byte = next(bits)
+            except StopIteration:
                 return False
-        else:
-            if byte >> 6 != 0b10:
+            if byte[0:2] != [1, 0]:
                 return False
-            leading_bytes -= 1
-    return leading_bytes == 0
+    return True
